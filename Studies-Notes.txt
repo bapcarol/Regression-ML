@@ -1,0 +1,56 @@
+----- Regression -----
+
+
+1. Definition: 
+
+-> Is the process of predicting a continuous value
+-> Historical data showing details of past to predict 
+
+Ex: CO2 emissions of a car based on other variables and the c02 emission of others car
+
+
+
+2. Independent vs Dependent Variable
+
+X -> Independent -> all the atributes/features (columns) except the one you want to predict
+Y -> Dependent -> the atribute you want to predict (in the example it would be the C02 Emission)
+ 
+
+
+3. Simple vs Mutiple
+
+a) Simple: One independent variable is used to estimate a dependent variable. It can either be linear or non-linear.
+
+b) Multiple: More than one independent variable is used to estimate a dependent variable.
+
+
+
+4. Applications of regression
+
+-> Sales forecasting; Satisfaction Analysis; Price estimation; Employment income;
+
+
+
+5. Regression Algorithms
+
+-> Ordinal; Poisson; Fast Forest quantile; Linear, Polynomial, Lasso, Stepwise, Ridge; Bayesian; Neural Network; Decision Forest; KNN; Boosted decision tree;
+
+
+6. How to find the best fit?
+
+---- Simple linear regression => y = theta0 + theta1*x1 ------
+
+-> For a simple linear regression you gotta find the minimum MSE (mean square error), to get the line where the residual error is the least as possible.
+-> You can use a mathematic formula to find theta0 and theta1 (coeficients of the fit line): 
+   - theta1: calculate the mean of x and y, then calculate ((x-xmean)*(y-ymean))/((x-xmean)^2)
+   - theta0: ymean - theta1*xmean
+
+
+
+----------------------------------- // -------------------------------------
+
+
+
+
+
+ 
