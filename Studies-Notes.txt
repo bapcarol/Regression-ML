@@ -25,7 +25,7 @@ b) Multiple: More than one independent variable is used to estimate a dependent 
 
 
 
-4. Applications of regression
+4. Applications of Simple linear regression
 
 -> Sales forecasting; Satisfaction Analysis; Price estimation; Employment income;
 
@@ -45,6 +45,43 @@ b) Multiple: More than one independent variable is used to estimate a dependent 
    - theta1: calculate the mean of x and y, then calculate ((x-xmean)*(y-ymean))/((x-xmean)^2)
    - theta0: ymean - theta1*xmean
 
+
+7. Multiple linear regression
+
+a) Applications
+-> Independent variables effectiveness on prediction; Predictinf impact of changes
+
+b) The best fit
+
+C02_Emissions = theta0 + theta1*Engine_Size + theta2*Cylinders + ...
+
+-> the best fit is the one that leads to a model with the least erros (minimize MSE)
+-> The MSE is the mean of all the residual erros, which are the result of the subtraction of the predicted value and the actual value
+-> Ordinary Least Squares -> Linear Algebra operations -> too slow, must be used only for data with less than 10k rows
+-> An optamization algorithm such as gradient descent; -> proper aproach for larger datasets.
+
+
+8. Model Evaluation Approaches
+
+a) Train and Test on the same Dataset
+
+-> Use the total dataset to traind and than take a piece of the dataset to test the model 
+-> One of the simplest way to calculate the accuracy of the model is to take the mean of all the errors (value predicted - actual value)
+-> May result in over-fitting -> the model is overly trained to the dataset, which may capture noise and produce a non-generalized model
+
+b) Train/Test Split
+
+-> Select a portion of the dataset to train and the rest to test.
+-> Involving splitting the data between train and test set.
+-> More accurate evaluation on out-of-sample accuracy.
+-> Better for real world.
+-> Highly dependent on which datasets the data is trained and tested
+
+c) K-Fold Cross-Validation
+
+-> If you are using a 4 fold cross validation for example you can use the first 25% to testing and the rest to train
+then you use the second quarter for testing and the rest for training and that goes till the end of all folds.
+After doing that you average the accuracy of all this tests and trainings
 
 
 ----------------------------------- // -------------------------------------
