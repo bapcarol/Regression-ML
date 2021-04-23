@@ -24,6 +24,7 @@ a) Simple: One independent variable is used to estimate a dependent variable. It
 b) Multiple: More than one independent variable is used to estimate a dependent variable.
 
 
+---------------------------------------------------------------------------------------------------------
 
 4. Applications of Simple linear regression
 
@@ -45,6 +46,7 @@ b) Multiple: More than one independent variable is used to estimate a dependent 
    - theta1: calculate the mean of x and y, then calculate ((x-xmean)*(y-ymean))/((x-xmean)^2)
    - theta0: ymean - theta1*xmean
 
+------------------------------------------------------------------------------------------------------
 
 7. Multiple linear regression
 
@@ -60,6 +62,8 @@ C02_Emissions = theta0 + theta1*Engine_Size + theta2*Cylinders + ...
 -> Ordinary Least Squares -> Linear Algebra operations -> too slow, must be used only for data with less than 10k rows
 -> An optamization algorithm such as gradient descent; -> proper aproach for larger datasets.
 
+
+------------------------------------------------------------------------------------------------------------
 
 8. Model Evaluation Approaches
 
@@ -83,6 +87,29 @@ c) K-Fold Cross-Validation
 then you use the second quarter for testing and the rest for training and that goes till the end of all folds.
 After doing that you average the accuracy of all this tests and trainings
 
+
+d) R^2 = 1 - RSE
+
+-> It is not an error. Represents how close the data values are to the fitted regression line.
+-> The higher the better fit.
+
+----------------------------------------------------------------------------------------------------------
+
+9. Non-linear Regression 
+
+-> When the relationship between the variables is not linear it obviously require a non-linear regression to predictions.
+
+y = theta0 + theta1*theta2"^x
+
+-> Polynomial regression -> quadratic (parabolic) regresion and cubic regression etc
+
+y = theta0 + theta1*x1 + theta2*x2 + theta3*x3 -> multiple linear regression -> least squares
+
+10. Linear vs Non-Linear
+
+a) To choose
+-> Inspect Visually
+-> Based on accuracy
 
 ----------------------------------- // -------------------------------------
 
